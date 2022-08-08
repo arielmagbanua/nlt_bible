@@ -22,5 +22,12 @@ abstract class NltRemoteDataSource extends RestfulDataSource {
   ///
   /// The [ref] is the reference(s) for the passages to be returned.
   /// More than one reference can be given, separated by semi-colons or commas.
+  /// The [version] is the bible version of the passage that it will retrieve.
   Future<String?> getPassages(String ref, {String version = 'NLT'});
+
+  /// Executes text search to NLT API.
+  ///
+  /// The [text] is the text to search for.
+  /// The [version] is the bible version of the passage that it will retrieve.
+  Future<String?> search(String text, {String version = 'NLT'});
 }

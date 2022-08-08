@@ -41,12 +41,29 @@ class NltRemoteDataSourceImplementation extends NltRemoteDataSource {
   ///
   /// The [ref] is the reference(s) for the passages to be returned.
   /// More than one reference can be given, separated by semi-colons or commas.
+  /// The [version] is the bible version of the passage that it will retrieve.
   @override
   Future<String?> getPassages(String ref, {String version = 'NLT'}) async {
     final response = await _response(
-        endpoint: 'passages',
-        method: 'GET',
-        params: {'key': apiKey, 'ref': ref, 'version': version});
+      endpoint: 'passages',
+      method: 'GET',
+      params: {'key': apiKey, 'ref': ref, 'version': version},
+    );
+
+    return response.statusCode == 200 ? response.body : null;
+  }
+
+  /// Executes text search to NLT API.
+  ///
+  /// The [text] is the text to search for.
+  /// The [version] is the bible version of the passage that it will retrieve.
+  @override
+  Future<String?> search(String text, {String version = 'NLT'}) async {
+    final response = await _response(
+      endpoint: 'search',
+      method: 'GET',
+      params: {'key': apiKey, 'text': text, 'version': version},
+    );
 
     return response.statusCode == 200 ? response.body : null;
   }
