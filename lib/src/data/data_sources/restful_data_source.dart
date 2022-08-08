@@ -12,8 +12,7 @@ abstract class RestfulDataSource {
   });
 
   /// The default headers for every request.
-  Map<String, String> get defaultHeaders =>
-      {'Content-Type': 'application/json'};
+  Map<String, String> get defaultHeaders => {};
 
   /// Sends the http request.
   ///
