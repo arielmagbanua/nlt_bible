@@ -61,5 +61,28 @@ void main() {
     final result = await remoteDataSource.getPassages('John 3:16-18, John 1:1');
 
     expect(result, sampleMultiPassagesResult);
+    expect(true, result?.contains('For this is how God loved the world:'));
+  });
+
+  test('Test searching of passage', () async {
+    final correctUri = Uri.parse(
+      'https://api.nlt.to/api/search?key=$apiKey&text=Christ&version=NLT',
+    );
+
+    when(() => mockResponse.statusCode).thenReturn(200);
+    when(() => mockResponse.body).thenReturn(sampleSearchResult);
+    when(() => mockedHttpClient.get(correctUri, headers: {})).thenAnswer(
+          (_) => Future<http.Response>.value(mockResponse),
+    );
+
+    final remoteDataSource = NltRemoteDataSourceImplementation(
+      httpClient: mockedHttpClient,
+      apiKey: apiKey,
+    );
+
+    final result = await remoteDataSource.search('Christ');
+
+    expect(result, sampleSearchResult);
+    expect(true, result?.contains('Christ'));
   });
 }
