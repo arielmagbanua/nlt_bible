@@ -24,6 +24,43 @@ const samplePassagesResult = r'''
 </html>
 ''';
 
+const samplePassagesResultKJV = r'''
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>KJV API</title>
+	<link rel="stylesheet" href="https://api.nlt.to/content/composition-css?vers=1.04" />
+</head>
+
+<body>
+	<div id="bibletext" class=" NLT KJV BibleText section">
+		<section>
+			<h2 class="bk_ch_vs_header">John 3:16-18, KJV</h2>
+			<p class="body">
+				<span class="vn">16</span><span class="red">For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.</span><a
+					class="a-tn">*</a><span class="tn"><span class="tn-ref">3:16</span> <span class="tn-ital">whosoever believeth:</span>
+				whoever believes.</span> 
+				<span class="vn">17</span><span class="red">For God sent not his Son into the world to condemn the world; but that the world through him might be saved.</span>
+				<span class="vn">18</span><span class="red">He that believeth on him is not condemned: but he that believeth not is condemned already, because he hath not believed in the name of the only begotten Son of God.</span>
+				<h2 class="bk_ch_vs_header">John 1:1, KJV</h2>
+		</section>
+		<section>
+			<div class="section-head">
+				<p class="chapter-number">1</p>
+				<div class="kjv subhead-group">
+					<p class="subhead">Prologue: Christ, the Eternal Word</p>
+				</div>
+			</div>
+			<p class="body-ch-hd"><span class="vn">1</span>In the beginning was the Word, and the Word was with God, and
+				the Word was God.
+		</section>
+	</div>
+</body>
+
+</html>
+''';
+
 const sampleMultiPassagesResult = r'''
 <!DOCTYPE html>
 <html lang="en-US">
@@ -1521,6 +1558,1367 @@ const sampleSearchResult = r'''
 				<td><a href="https://nlt.to/Gal.5.2/">Gal.5.2</a></td>
 				<td>Listen! I, Paul, tell you this: If you are counting on circumcision to make you right with God, then
 					<span class="highlight">Christ</span> will be of no benefit to you.</td>
+			</tr>
+	</div>
+	</table>
+</body>
+
+</html>
+''';
+
+const sampleSearchResultKJV = r'''
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>KJV API</title>
+	<link rel="stylesheet" href="https://api.nlt.to/content/composition-css?vers=1.04" />
+</head>
+
+<body>
+	<div class="BibleText">
+		<h1>Christ</h1>
+		<h2 class="results"><span class="count">250 result(s) <span class="version">(version=KJV)</span></h2>
+		<table>
+			<tr>
+				<td><a href="https://nlt.to/Matt.1.1/">Matt.1.1</a></td>
+				<td>
+					The book of the generation of Jesus <span class="highlight">Christ</span>, the son of David, the son
+					of Abraham.*{book: record. generation: genealogy.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.1.16/">Matt.1.16</a></td>
+				<td>and Jacob begat Joseph the husband of Mary, of whom was born Jesus, who is called
+					<span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.1.17/">Matt.1.17</a></td>
+				<td>So all the generations from Abraham to David are fourteen generations; and from David until the
+					carrying away into Babylon are fourteen generations; and from the carrying away into Babylon unto
+					<span class="highlight">Christ</span> are fourteen generations.*{carrying away into: captivity in.}
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.1.18/">Matt.1.18</a></td>
+				<td>
+					Now the birth of Jesus <span class="highlight">Christ</span> was on this wise: When as his mother
+					Mary was espoused to Joseph, before they came together, she was found with child of the Holy
+					Ghost.*{on this wise: as follows. espoused: engaged.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.2.4/">Matt.2.4</a></td>
+				<td>And when he had gathered all the chief priests and scribes of the people together, he demanded of
+					them where <span class="highlight">Christ</span> should be born.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.11.2/">Matt.11.2</a></td>
+				<td>Now when John had heard in the prison the works of <span class="highlight">Christ</span>, he sent
+					two of his disciples, </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.16.16/">Matt.16.16</a></td>
+				<td>And Simon Peter answered and said, Thou art the <span class="highlight">Christ</span>, the Son of
+					the living God.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.16.20/">Matt.16.20</a></td>
+				<td>Then charged he his disciples that they should tell no man that he was Jesus the
+					<span class="highlight">Christ</span>.*{charged he: he warned.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.22.42/">Matt.22.42</a></td>
+				<td>saying, What think ye of <span class="highlight">Christ</span>? whose son is he?
+					They say unto him, The son of David.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.23.8/">Matt.23.8</a></td>
+				<td>But be not ye called Rabbi: for one is your Master, even <span class="highlight">Christ</span>; and
+					all ye are brethren.*{Master: Teacher.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.23.10/">Matt.23.10</a></td>
+				<td>Neither be ye called masters: for one is your Master, even <span class="highlight">Christ</span>.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.24.5/">Matt.24.5</a></td>
+				<td>For many shall come in my name, saying, I am <span class="highlight">Christ</span>; and shall
+					deceive many. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.24.23/">Matt.24.23</a></td>
+				<td>Then if any man shall say unto you, Lo, here is <span class="highlight">Christ</span>, or there;
+					believe it not.*{lo: look.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.24.24/">Matt.24.24</a></td>
+				<td>For there shall arise false <span class="highlight">Christ</span>s, and false prophets, and shall
+					shew great signs and wonders; insomuch that, if it were possible, they shall deceive the very elect.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.26.63/">Matt.26.63</a></td>
+				<td>But Jesus held his peace. And the high priest answered and said unto him, I adjure thee by the
+					living God, that thou tell us whether thou be the <span class="highlight">Christ</span>, the Son of
+					God.*{held his peace: remained silent. adjure thee: put you under oath.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.26.68/">Matt.26.68</a></td>
+				<td>saying, Prophesy unto us, thou <span class="highlight">Christ</span>, Who is he that smote thee?
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.27.17/">Matt.27.17</a></td>
+				<td>Therefore when they were gathered together, Pilate said unto them, Whom will ye that I release unto
+					you? Barabbas, or Jesus which is called <span class="highlight">Christ</span>? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Matt.27.22/">Matt.27.22</a></td>
+				<td>Pilate saith unto them, What shall I do then with Jesus which is called
+					<span class="highlight">Christ</span>?
+					They all say unto him, Let him be crucified.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Mark.1.1/">Mark.1.1</a></td>
+				<td>
+					The beginning of the gospel of Jesus <span class="highlight">Christ</span>, the Son of God; </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Mark.8.29/">Mark.8.29</a></td>
+				<td>And he saith unto them, But whom say ye that I am?
+					And Peter answereth and saith unto him, Thou art the <span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Mark.9.41/">Mark.9.41</a></td>
+				<td>For whosoever shall give you a cup of water to drink in my name, because ye belong to
+					<span class="highlight">Christ</span>, verily I say unto you, he shall not lose his reward.*{verily:
+					truly.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Mark.12.35/">Mark.12.35</a></td>
+				<td>
+					And Jesus answered and said, while he taught in the temple, How say the scribes that
+					<span class="highlight">Christ</span> is the son of David? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Mark.13.6/">Mark.13.6</a></td>
+				<td>for many shall come in my name, saying, I am <span class="highlight">Christ</span>; and shall
+					deceive many. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Mark.13.21/">Mark.13.21</a></td>
+				<td>And then if any man shall say to you, Lo, here is <span class="highlight">Christ</span>; or, lo, he
+					is there; believe him not:*{lo: look.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Mark.13.22/">Mark.13.22</a></td>
+				<td>for false <span class="highlight">Christ</span>s and false prophets shall rise, and shall shew signs
+					and wonders, to seduce, if it were possible, even the elect. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Mark.14.61/">Mark.14.61</a></td>
+				<td>But he held his peace, and answered nothing. Again the high priest asked him, and said unto him, Art
+					thou the <span class="highlight">Christ</span>, the Son of the Blessed?*{held his peace: remained
+					silent.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Mark.15.32/">Mark.15.32</a></td>
+				<td>Let <span class="highlight">Christ</span> the King of Israel descend now from the cross, that we may
+					see and believe. And they that were crucified with him reviled him.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.2.11/">Luke.2.11</a></td>
+				<td>For unto you is born this day in the city of David a Saviour, which is
+					<span class="highlight">Christ</span> the Lord. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.2.26/">Luke.2.26</a></td>
+				<td>And it was revealed unto him by the Holy Ghost, that he should not see death, before he had seen the
+					Lord’s <span class="highlight">Christ</span>. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.3.15/">Luke.3.15</a></td>
+				<td>And as the people were in expectation, and all men mused in their hearts of John, whether he were
+					the <span class="highlight">Christ</span>, or not;*{were in expectation: waiting expectantly. mused:
+					wondered.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.4.41/">Luke.4.41</a></td>
+				<td>And devils also came out of many, crying out, and saying, Thou art
+					<span class="highlight">Christ</span> the Son of God. And he rebuking them suffered them not to
+					speak: for they knew that he was <span class="highlight">Christ</span>.*{suffered them not: did not
+					allow them.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.9.20/">Luke.9.20</a></td>
+				<td>He said unto them, But whom say ye that I am?
+					Peter answering said, The <span class="highlight">Christ</span> of God.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.20.41/">Luke.20.41</a></td>
+				<td>
+					And he said unto them, How say they that <span class="highlight">Christ</span> is David’s son? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.21.8/">Luke.21.8</a></td>
+				<td>And he said, Take heed that ye be not deceived: for many shall come in my name, saying, I am
+					<span class="highlight">Christ</span>; and the time draweth near: go ye not therefore after them.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.22.67/">Luke.22.67</a></td>
+				<td>Art thou the <span class="highlight">Christ</span>? tell us.
+					And he said unto them, If I tell you, ye will not believe: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.23.2/">Luke.23.2</a></td>
+				<td>And they began to accuse him, saying, We found this fellow perverting the nation, and forbidding to
+					give tribute to Caesar, saying that he himself is <span class="highlight">Christ</span> a
+					King.*{perverting: subverting.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.23.35/">Luke.23.35</a></td>
+				<td>And the people stood beholding. And the rulers also with them derided him, saying, He saved others;
+					let him save himself, if he be <span class="highlight">Christ</span>, the chosen of God.*{beholding:
+					watching. derided: scoffed at.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.23.39/">Luke.23.39</a></td>
+				<td>And one of the malefactors which were hanged railed on him, saying, If thou be
+					<span class="highlight">Christ</span>, save thyself and us.*{railed on: hurled insults at.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.24.26/">Luke.24.26</a></td>
+				<td>ought not <span class="highlight">Christ</span> to have suffered these things, and to enter into his
+					glory? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Luke.24.46/">Luke.24.46</a></td>
+				<td>and said unto them, Thus it is written, and thus it behoved <span class="highlight">Christ</span> to
+					suffer, and to rise from the dead the third day:*{behoved: was necessary for.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.1.17/">John.1.17</a></td>
+				<td>For the law was given by Moses, but grace and truth came by Jesus
+					<span class="highlight">Christ</span>. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.1.20/">John.1.20</a></td>
+				<td>And he confessed, and denied not; but confessed, I am not the <span class="highlight">Christ</span>.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.1.25/">John.1.25</a></td>
+				<td>And they asked him, and said unto him, Why baptizest thou then, if thou be not that
+					<span class="highlight">Christ</span>, nor Elias, neither that prophet?</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.1.41/">John.1.41</a></td>
+				<td>He first findeth his own brother Simon, and saith unto him, We have found the Messias, which is,
+					being interpreted, the <span class="highlight">Christ</span>.*{Messias: Messiah.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.3.28/">John.3.28</a></td>
+				<td>Ye yourselves bear me witness, that I said, I am not the <span class="highlight">Christ</span>, but
+					that I am sent before him. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.4.25/">John.4.25</a></td>
+				<td>The woman saith unto him, I know that Messias cometh, which is called
+					<span class="highlight">Christ</span>: when he is come, he will tell us all things.*{Messias:
+					Messiah.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.4.29/">John.4.29</a></td>
+				<td>Come, see a man, which told me all things that ever I did: is not this the
+					<span class="highlight">Christ</span>? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.4.42/">John.4.42</a></td>
+				<td>and said unto the woman, Now we believe, not because of thy saying: for we have heard him ourselves,
+					and know that this is indeed the <span class="highlight">Christ</span>, the Saviour of the world.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.6.69/">John.6.69</a></td>
+				<td>And we believe and are sure that thou art that <span class="highlight">Christ</span>, the Son of the
+					living God.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.7.26/">John.7.26</a></td>
+				<td>But, lo, he speaketh boldly, and they say nothing unto him. Do the rulers know indeed that this is
+					the very <span class="highlight">Christ</span>?*{rulers: authorities.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.7.27/">John.7.27</a></td>
+				<td>Howbeit we know this man whence he is: but when <span class="highlight">Christ</span> cometh, no man
+					knoweth whence he is.*{howbeit: but.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.7.31/">John.7.31</a></td>
+				<td>And many of the people believed on him, and said, When <span class="highlight">Christ</span> cometh,
+					will he do more miracles than these which this man hath done?</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.7.41/">John.7.41</a></td>
+				<td>Others said, This is the <span class="highlight">Christ</span>. But some said, Shall
+					<span class="highlight">Christ</span> come out of Galilee? </td>
+			</tr>
+
+			<tr>
+				<td><a href="https://nlt.to/John.7.42/">John.7.42</a></td>
+				<td>Hath not the scripture said, That <span class="highlight">Christ</span> cometh of the seed of David,
+					and out of the town of Bethlehem, where David was? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.9.22/">John.9.22</a></td>
+				<td>These words spake his parents, because they feared the Jews: for the Jews had agreed already, that
+					if any man did confess that he was <span class="highlight">Christ</span>, he should be put out of
+					the synagogue. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.10.24/">John.10.24</a></td>
+				<td>Then came the Jews round about him, and said unto him, How long dost thou make us to doubt? If thou
+					be the <span class="highlight">Christ</span>, tell us plainly.*{make us to doubt: keep us in
+					suspense.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.11.27/">John.11.27</a></td>
+				<td>She saith unto him, Yea, Lord: I believe that thou art the <span class="highlight">Christ</span>,
+					the Son of God, which should come into the world.*{which should: who was to.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.12.34/">John.12.34</a></td>
+				<td>The people answered him, We have heard out of the law that <span class="highlight">Christ</span>
+					abideth for ever: and how sayest thou, The Son of man must be lifted up? who is this Son of
+					man?*{abideth: will live.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.17.3/">John.17.3</a></td>
+				<td>And this is life eternal, that they might know thee the only true God, and Jesus
+					<span class="highlight">Christ</span>, whom thou hast sent. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/John.20.31/">John.20.31</a></td>
+				<td>but these are written, that ye might believe that Jesus is the
+					<span class="highlight">Christ</span>, the Son of God; and that believing ye might have life through
+					his name.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.2.30/">Acts.2.30</a></td>
+				<td>Therefore being a prophet, and knowing that God had sworn with an oath to him, that of the fruit of
+					his loins, according to the flesh, he would raise up <span class="highlight">Christ</span> to sit on
+					his throne;*{of the fruit of his loins, according to the flesh: from his descendants.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.2.31/">Acts.2.31</a></td>
+				<td>he seeing this before spake of the resurrection of <span class="highlight">Christ</span>, that his
+					soul was not left in hell, neither his flesh did see corruption.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.2.36/">Acts.2.36</a></td>
+				<td>Therefore let all the house of Israel know assuredly, that God hath made that same Jesus, whom ye
+					have crucified, both Lord and <span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.2.38/">Acts.2.38</a></td>
+				<td>Then Peter said unto them, Repent, and be baptized every one of you in the name of Jesus
+					<span class="highlight">Christ</span> for the remission of sins, and ye shall receive the gift of
+					the Holy Ghost.*{remission: forgiveness.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.3.6/">Acts.3.6</a></td>
+				<td>Then Peter said, Silver and gold have I none; but such as I have give I thee: In the name of Jesus
+					<span class="highlight">Christ</span> of Nazareth rise up and walk. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.3.18/">Acts.3.18</a></td>
+				<td>But those things, which God before had shewed by the mouth of all his prophets, that
+					<span class="highlight">Christ</span> should suffer, he hath so fulfilled. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.3.20/">Acts.3.20</a></td>
+				<td>and he shall send Jesus <span class="highlight">Christ</span>, which before was preached unto you:
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.4.10/">Acts.4.10</a></td>
+				<td>be it known unto you all, and to all the people of Israel, that by the name of Jesus
+					<span class="highlight">Christ</span> of Nazareth, whom ye crucified, whom God raised from the dead,
+					even by him doth this man stand here before you whole. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.4.26/">Acts.4.26</a></td>
+				<td>The kings of the earth stood up, and the rulers were gathered together against the Lord, and against
+					his <span class="highlight">Christ</span>. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.5.42/">Acts.5.42</a></td>
+				<td>And daily in the temple, and in every house, they ceased not to teach and preach Jesus
+					<span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.8.5/">Acts.8.5</a></td>
+				<td>Then Philip went down to the city of Samaria, and preached <span class="highlight">Christ</span>
+					unto them. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.8.12/">Acts.8.12</a></td>
+				<td>But when they believed Philip preaching the things concerning the kingdom of God, and the name of
+					Jesus <span class="highlight">Christ</span>, they were baptized, both men and women. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.8.37/">Acts.8.37</a></td>
+				<td>And Philip said, If thou believest with all thine heart, thou mayest.
+					And he answered and said, I believe that Jesus <span class="highlight">Christ</span> is the Son of
+					God. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.9.20/">Acts.9.20</a></td>
+				<td>And straightway he preached <span class="highlight">Christ</span> in the synagogues, that he is the
+					Son of God.*{straightway: immediately.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.9.22/">Acts.9.22</a></td>
+				<td>But Saul increased the more in strength, and confounded the Jews which dwelt at Damascus, proving
+					that this is very <span class="highlight">Christ</span>. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.9.34/">Acts.9.34</a></td>
+				<td>And Peter said unto him, Aeneas, Jesus <span class="highlight">Christ</span> maketh thee whole:
+					arise, and make thy bed. And he arose immediately. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.10.36/">Acts.10.36</a></td>
+				<td>The word which God sent unto the children of Israel, preaching peace by Jesus
+					<span class="highlight">Christ</span>: (he is Lord of all:) </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.11.17/">Acts.11.17</a></td>
+				<td>Forasmuch then as God gave them the like gift as he did unto us, who believed on the Lord Jesus
+					<span class="highlight">Christ</span>; what was I, that I could withstand God?*{like: same.
+					withstand: oppose.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.15.11/">Acts.15.11</a></td>
+				<td>But we believe that through the grace of the Lord Jesus <span class="highlight">Christ</span> we
+					shall be saved, even as they.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.15.26/">Acts.15.26</a></td>
+				<td>men that have hazarded their lives for the name of our Lord Jesus
+					<span class="highlight">Christ</span>.*{hazarded: risked.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.16.18/">Acts.16.18</a></td>
+				<td>And this did she many days. But Paul, being grieved, turned and said to the spirit, I command thee
+					in the name of Jesus <span class="highlight">Christ</span> to come out of her. And he came out the
+					same hour.*{grieved: greatly annoyed.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.16.31/">Acts.16.31</a></td>
+				<td>And they said, Believe on the Lord Jesus <span class="highlight">Christ</span>, and thou shalt be
+					saved, and thy house. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.17.3/">Acts.17.3</a></td>
+				<td>opening and alleging, that <span class="highlight">Christ</span> must needs have suffered, and risen
+					again from the dead; and that this Jesus, whom I preach unto you, is
+					<span class="highlight">Christ</span>.*{opening and alleging: explaining and proving. must needs:
+					had to.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.18.5/">Acts.18.5</a></td>
+				<td>And when Silas and Timotheus were come from Macedonia, Paul was pressed in the spirit, and testified
+					to the Jews that Jesus was <span class="highlight">Christ</span>.*{was pressed in the spirit:
+					devoted all of his time to preaching.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.18.28/">Acts.18.28</a></td>
+				<td>for he mightily convinced the Jews, and that publickly, shewing by the scriptures that Jesus was
+					<span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.19.4/">Acts.19.4</a></td>
+				<td>Then said Paul, John verily baptized with the baptism of repentance, saying unto the people, that
+					they should believe on him which should come after him, that is, on
+					<span class="highlight">Christ</span> Jesus.*{verily: indeed.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.20.21/">Acts.20.21</a></td>
+				<td>testifying both to the Jews, and also to the Greeks, repentance toward God, and faith toward our
+					Lord Jesus <span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.24.24/">Acts.24.24</a></td>
+				<td>And after certain days, when Felix came with his wife Drusilla, which was a Jewess, he sent for
+					Paul, and heard him concerning the faith in <span class="highlight">Christ</span>.*{heard: listened
+					to.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.26.23/">Acts.26.23</a></td>
+				<td>that <span class="highlight">Christ</span> should suffer, and that he should be the first that
+					should rise from the dead, and should shew light unto the people, and to the Gentiles.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Acts.28.31/">Acts.28.31</a></td>
+				<td>preaching the kingdom of God, and teaching those things which concern the Lord Jesus
+					<span class="highlight">Christ</span>, with all confidence, no man forbidding him.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.1.1/">Rom.1.1</a></td>
+				<td>
+					Paul, a servant of Jesus <span class="highlight">Christ</span>, called to be an apostle, separated
+					unto the gospel of God,*{separated unto: set apart for.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.1.3/">Rom.1.3</a></td>
+				<td>concerning his Son Jesus <span class="highlight">Christ</span> our Lord, which was made of the seed
+					of David according to the flesh;*{which was made: who was born.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.1.6/">Rom.1.6</a></td>
+				<td>among whom are ye also the called of Jesus <span class="highlight">Christ</span>: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.1.7/">Rom.1.7</a></td>
+				<td>to all that be in Rome, beloved of God, called to be saints: Grace to you and peace from God our
+					Father, and the Lord Jesus <span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.1.8/">Rom.1.8</a></td>
+				<td>
+					First, I thank my God through Jesus <span class="highlight">Christ</span> for you all, that your
+					faith is spoken of throughout the whole world. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.1.16/">Rom.1.16</a></td>
+				<td>For I am not ashamed of the gospel of <span class="highlight">Christ</span>: for it is the power of
+					God unto salvation to every one that believeth; to the Jew first, and also to the Greek. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.2.16/">Rom.2.16</a></td>
+				<td>in the day when God shall judge the secrets of men by Jesus <span class="highlight">Christ</span>
+					according to my gospel.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.3.22/">Rom.3.22</a></td>
+				<td>even the righteousness of God which is by faith of Jesus <span class="highlight">Christ</span> unto
+					all and upon all them that believe: for there is no difference: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.3.24/">Rom.3.24</a></td>
+				<td>being justified freely by his grace through the redemption that is in
+					<span class="highlight">Christ</span> Jesus: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.5.1/">Rom.5.1</a></td>
+				<td>
+					Therefore being justified by faith, we have peace with God through our Lord Jesus
+					<span class="highlight">Christ</span>: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.5.6/">Rom.5.6</a></td>
+				<td>For when we were yet without strength, in due time <span class="highlight">Christ</span> died for
+					the ungodly. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.5.8/">Rom.5.8</a></td>
+				<td>But God commendeth his love toward us, in that, while we were yet sinners,
+					<span class="highlight">Christ</span> died for us.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.5.11/">Rom.5.11</a></td>
+				<td>And not only so, but we also joy in God through our Lord Jesus
+					<span class="highlight">Christ</span>, by whom we have now received the atonement.*{atonement:
+					reconciliation.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.5.15/">Rom.5.15</a></td>
+				<td>But not as the offence, so also is the free gift. For if through the offence of one many be dead,
+					much more the grace of God, and the gift by grace, which is by one man, Jesus
+					<span class="highlight">Christ</span>, hath abounded unto many. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.5.17/">Rom.5.17</a></td>
+				<td>For if by one man’s offence death reigned by one; much more they which receive abundance of grace
+					and of the gift of righteousness shall reign in life by one, Jesus
+					<span class="highlight">Christ</span>.)</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.5.21/">Rom.5.21</a></td>
+				<td>that as sin hath reigned unto death, even so might grace reign through righteousness unto eternal
+					life by Jesus <span class="highlight">Christ</span> our Lord.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.6.3/">Rom.6.3</a></td>
+				<td>Know ye not, that so many of us as were baptized into Jesus <span class="highlight">Christ</span>
+					were baptized into his death? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.6.4/">Rom.6.4</a></td>
+				<td>Therefore we are buried with him by baptism into death: that like as
+					<span class="highlight">Christ</span> was raised up from the dead by the glory of the Father, even
+					so we also should walk in newness of life.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.6.8/">Rom.6.8</a></td>
+				<td>Now if we be dead with <span class="highlight">Christ</span>, we believe that we shall also live
+					with him: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.6.9/">Rom.6.9</a></td>
+				<td>knowing that <span class="highlight">Christ</span> being raised from the dead dieth no more; death
+					hath no more dominion over him.*{dominion: mastery.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.6.11/">Rom.6.11</a></td>
+				<td>Likewise reckon ye also yourselves to be dead indeed unto sin, but alive unto God through Jesus
+					<span class="highlight">Christ</span> our Lord.*{reckon: count.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.6.23/">Rom.6.23</a></td>
+				<td>For the wages of sin is death; but the gift of God is eternal life through Jesus
+					<span class="highlight">Christ</span> our Lord.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.7.4/">Rom.7.4</a></td>
+				<td>Wherefore, my brethren, ye also are become dead to the law by the body of
+					<span class="highlight">Christ</span>; that ye should be married to another, even to him who is
+					raised from the dead, that we should bring forth fruit unto God. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.7.25/">Rom.7.25</a></td>
+				<td>I thank God through Jesus <span class="highlight">Christ</span> our Lord. So then with the mind I
+					myself serve the law of God; but with the flesh the law of sin.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.8.1/">Rom.8.1</a></td>
+				<td>
+					There is therefore now no condemnation to them which are in <span class="highlight">Christ</span>
+					Jesus, who walk not after the flesh, but after the Spirit. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.8.2/">Rom.8.2</a></td>
+				<td>For the law of the Spirit of life in <span class="highlight">Christ</span> Jesus hath made me free
+					from the law of sin and death. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.8.9/">Rom.8.9</a></td>
+				<td>But ye are not in the flesh, but in the Spirit, if so be that the Spirit of God dwell in you. Now if
+					any man have not the Spirit of <span class="highlight">Christ</span>, he is none of his. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.8.10/">Rom.8.10</a></td>
+				<td>And if <span class="highlight">Christ</span> be in you, the body is dead because of sin; but the
+					Spirit is life because of righteousness. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.8.11/">Rom.8.11</a></td>
+				<td>But if the Spirit of him that raised up Jesus from the dead dwell in you, he that raised up
+					<span class="highlight">Christ</span> from the dead shall also quicken your mortal bodies by his
+					Spirit that dwelleth in you.*{quicken: give life to.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.8.17/">Rom.8.17</a></td>
+				<td>and if children, then heirs; heirs of God, and joint-heirs with
+					<span class="highlight">Christ</span>; if so be that we suffer with him, that we may be also
+					glorified together.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.8.34/">Rom.8.34</a></td>
+				<td>Who is he that condemneth? It is <span class="highlight">Christ</span> that died, yea rather, that
+					is risen again, who is even at the right hand of God, who also maketh intercession for us.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.8.35/">Rom.8.35</a></td>
+				<td>Who shall separate us from the love of <span class="highlight">Christ</span>? shall tribulation, or
+					distress, or persecution, or famine, or nakedness, or peril, or sword? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.8.39/">Rom.8.39</a></td>
+				<td>nor height, nor depth, nor any other creature, shall be able to separate us from the love of God,
+					which is in <span class="highlight">Christ</span> Jesus our Lord.*{creature: created thing.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.9.1/">Rom.9.1</a></td>
+				<td>
+					I say the truth in <span class="highlight">Christ</span>, I lie not, my conscience also bearing me
+					witness in the Holy Ghost, </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.9.3/">Rom.9.3</a></td>
+				<td>For I could wish that myself were accursed from <span class="highlight">Christ</span> for my
+					brethren, my kinsmen according to the flesh:*{accursed: cursed and cut off. kinsmen: people.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.9.5/">Rom.9.5</a></td>
+				<td>whose are the fathers, and of whom as concerning the flesh <span class="highlight">Christ</span>
+					came, who is over all, God blessed for ever. Amen.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.10.4/">Rom.10.4</a></td>
+				<td>For <span class="highlight">Christ</span> is the end of the law for righteousness to every one that
+					believeth.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.10.6/">Rom.10.6</a></td>
+				<td>But the righteousness which is of faith speaketh on this wise, Say not in thine heart, Who shall
+					ascend into heaven? (that is, to bring <span class="highlight">Christ</span> down from above:) </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.10.7/">Rom.10.7</a></td>
+				<td>or, Who shall descend into the deep? (that is, to bring up <span class="highlight">Christ</span>
+					again from the dead.) </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.12.5/">Rom.12.5</a></td>
+				<td>so we, being many, are one body in <span class="highlight">Christ</span>, and every one members one
+					of another.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.13.14/">Rom.13.14</a></td>
+				<td>But put ye on the Lord Jesus <span class="highlight">Christ</span>, and make not provision for the
+					flesh, to fulfil the lusts thereof.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.14.9/">Rom.14.9</a></td>
+				<td>For to this end <span class="highlight">Christ</span> both died, and rose, and revived, that he
+					might be Lord both of the dead and living.*{revived: returned to life.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.14.10/">Rom.14.10</a></td>
+				<td>But why dost thou judge thy brother? or why dost thou set at nought thy brother? for we shall all
+					stand before the judgment seat of <span class="highlight">Christ</span>.*{set at nought: despise.}
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.14.15/">Rom.14.15</a></td>
+				<td>But if thy brother be grieved with thy meat, now walkest thou not charitably. Destroy not him with
+					thy meat, for whom <span class="highlight">Christ</span> died.*{be grieved with: is hurt because of.
+					meat: food. charitably: in love.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.14.18/">Rom.14.18</a></td>
+				<td>For he that in these things serveth <span class="highlight">Christ</span> is acceptable to God, and
+					approved of men. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.15.3/">Rom.15.3</a></td>
+				<td>For even <span class="highlight">Christ</span> pleased not himself; but, as it is written, The
+					reproaches of them that reproached thee fell on me.*{reproaches: insults.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.15.5/">Rom.15.5</a></td>
+				<td>Now the God of patience and consolation grant you to be likeminded one toward another according to
+					<span class="highlight">Christ</span> Jesus: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.15.6/">Rom.15.6</a></td>
+				<td>that ye may with one mind and one mouth glorify God, even the Father of our Lord Jesus
+					<span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.15.7/">Rom.15.7</a></td>
+				<td>Wherefore receive ye one another, as <span class="highlight">Christ</span> also received us to the
+					glory of God. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.15.8/">Rom.15.8</a></td>
+				<td>Now I say that Jesus <span class="highlight">Christ</span> was a minister of the circumcision for
+					the truth of God, to confirm the promises made unto the fathers: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.15.16/">Rom.15.16</a></td>
+				<td>that I should be the minister of Jesus <span class="highlight">Christ</span> to the Gentiles,
+					ministering the gospel of God, that the offering up of the Gentiles might be acceptable, being
+					sanctified by the Holy Ghost.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.15.17/">Rom.15.17</a></td>
+				<td>I have therefore whereof I may glory through Jesus <span class="highlight">Christ</span> in those
+					things which pertain to God. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.15.18/">Rom.15.18</a></td>
+				<td>For I will not dare to speak of any of those things which <span class="highlight">Christ</span> hath
+					not wrought by me, to make the Gentiles obedient, by word and deed,*{wrought: done.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.15.19/">Rom.15.19</a></td>
+				<td>through mighty signs and wonders, by the power of the Spirit of God; so that from Jerusalem, and
+					round about unto Illyricum, I have fully preached the gospel of
+					<span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.15.20/">Rom.15.20</a></td>
+				<td>Yea, so have I strived to preach the gospel, not where <span class="highlight">Christ</span> was
+					named, lest I should build upon another man’s foundation: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.15.29/">Rom.15.29</a></td>
+				<td>And I am sure that, when I come unto you, I shall come in the fulness of the blessing of the gospel
+					of <span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.15.30/">Rom.15.30</a></td>
+				<td>Now I beseech you, brethren, for the Lord Jesus <span class="highlight">Christ</span>’s sake, and
+					for the love of the Spirit, that ye strive together with me in your prayers to God for me;*{beseech:
+					beg.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.16.3/">Rom.16.3</a></td>
+				<td>Greet Priscilla and Aquila my helpers in <span class="highlight">Christ</span> Jesus: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.16.5/">Rom.16.5</a></td>
+				<td>Likewise greet the church that is in their house.
+					Salute my wellbeloved Epaenetus, who is the firstfruits of Achaia unto
+					<span class="highlight">Christ</span>.*{salute: greet. is the firstfruits: was the first convert.}
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.16.7/">Rom.16.7</a></td>
+				<td>Salute Andronicus and Junia, my kinsmen, and my fellowprisoners, who are of note among the apostles,
+					who also were in <span class="highlight">Christ</span> before me.*{kinsmen: relatives.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.16.9/">Rom.16.9</a></td>
+				<td>Salute Urbane, our helper in <span class="highlight">Christ</span>, and Stachys my beloved.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.16.10/">Rom.16.10</a></td>
+				<td>Salute Apelles approved in <span class="highlight">Christ</span>. Salute them which are of
+					Aristobulus’ household. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.16.16/">Rom.16.16</a></td>
+				<td>Salute one another with an holy kiss. The churches of <span class="highlight">Christ</span> salute
+					you.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.16.18/">Rom.16.18</a></td>
+				<td>For they that are such serve not our Lord Jesus <span class="highlight">Christ</span>, but their own
+					belly; and by good words and fair speeches deceive the hearts of the simple.*{good: smooth. fair:
+					flattering.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.16.20/">Rom.16.20</a></td>
+				<td>And the God of peace shall bruise Satan under your feet shortly. The grace of our Lord Jesus
+					<span class="highlight">Christ</span> be with you. Amen.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.16.24/">Rom.16.24</a></td>
+				<td>The grace of our Lord Jesus <span class="highlight">Christ</span> be with you all. Amen.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.16.25/">Rom.16.25</a></td>
+				<td>Now to him that is of power to stablish you according to my gospel, and the preaching of Jesus
+					<span class="highlight">Christ</span>, according to the revelation of the mystery, which was kept
+					secret since the world began,*{stablish: establish.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/Rom.16.27/">Rom.16.27</a></td>
+				<td>to God only wise, be glory through Jesus <span class="highlight">Christ</span> for ever. Amen.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.1/">1Cor.1.1</a></td>
+				<td>
+					Paul, called to be an apostle of Jesus <span class="highlight">Christ</span> through the will of
+					God, and Sosthenes our brother, </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.2/">1Cor.1.2</a></td>
+				<td>unto the church of God which is at Corinth, to them that are sanctified in
+					<span class="highlight">Christ</span> Jesus, called to be saints, with all that in every place call
+					upon the name of Jesus <span class="highlight">Christ</span> our Lord, both theirs and ours: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.3/">1Cor.1.3</a></td>
+				<td>grace be unto you, and peace, from God our Father, and from the Lord Jesus
+					<span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.4/">1Cor.1.4</a></td>
+				<td>
+					I thank my God always on your behalf, for the grace of God which is given you by Jesus
+					<span class="highlight">Christ</span>; </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.6/">1Cor.1.6</a></td>
+				<td>even as the testimony of <span class="highlight">Christ</span> was confirmed in you: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.7/">1Cor.1.7</a></td>
+				<td>so that ye come behind in no gift; waiting for the coming of our Lord Jesus
+					<span class="highlight">Christ</span>:*{come behind in no: are not lacking in any.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.8/">1Cor.1.8</a></td>
+				<td>who shall also confirm you unto the end, that ye may be blameless in the day of our Lord Jesus
+					<span class="highlight">Christ</span>. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.9/">1Cor.1.9</a></td>
+				<td>God is faithful, by whom ye were called unto the fellowship of his Son Jesus
+					<span class="highlight">Christ</span> our Lord.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.10/">1Cor.1.10</a></td>
+				<td>
+					Now I beseech you, brethren, by the name of our Lord Jesus <span class="highlight">Christ</span>,
+					that ye all speak the same thing, and that there be no divisions among you; but that ye be perfectly
+					joined together in the same mind and in the same judgment.*{beseech: plead with.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.12/">1Cor.1.12</a></td>
+				<td>Now this I say, that every one of you saith, I am of Paul; and I of Apollos; and I of Cephas; and I
+					of <span class="highlight">Christ</span>.*{Cephas: Peter.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.13/">1Cor.1.13</a></td>
+				<td>Is <span class="highlight">Christ</span> divided? was Paul crucified for you? or were ye baptized in
+					the name of Paul? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.17/">1Cor.1.17</a></td>
+				<td>For <span class="highlight">Christ</span> sent me not to baptize, but to preach the gospel: not with
+					wisdom of words, lest the cross of <span class="highlight">Christ</span> should be made of none
+					effect.*{made of none effect: emptied of its power.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.23/">1Cor.1.23</a></td>
+				<td>but we preach <span class="highlight">Christ</span> crucified, unto the Jews a stumblingblock, and
+					unto the Greeks foolishness; </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.24/">1Cor.1.24</a></td>
+				<td>but unto them which are called, both Jews and Greeks, <span class="highlight">Christ</span> the
+					power of God, and the wisdom of God. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.1.30/">1Cor.1.30</a></td>
+				<td>But of him are ye in <span class="highlight">Christ</span> Jesus, who of God is made unto us wisdom,
+					and righteousness, and sanctification, and redemption: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.2.2/">1Cor.2.2</a></td>
+				<td>For I determined not to know any thing among you, save Jesus <span class="highlight">Christ</span>,
+					and him crucified.*{save: except.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.2.16/">1Cor.2.16</a></td>
+				<td>For who hath known the mind of the Lord, that he may instruct him? But we have the mind of
+					<span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.3.1/">1Cor.3.1</a></td>
+				<td>
+					And I, brethren, could not speak unto you as unto spiritual, but as unto carnal, even as unto babes
+					in <span class="highlight">Christ</span>.*{carnal: worldly.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.3.11/">1Cor.3.11</a></td>
+				<td>For other foundation can no man lay than that is laid, which is Jesus
+					<span class="highlight">Christ</span>. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.3.23/">1Cor.3.23</a></td>
+				<td>and ye are <span class="highlight">Christ</span>’s; and <span class="highlight">Christ</span> is
+					God’s.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.4.1/">1Cor.4.1</a></td>
+				<td>
+					Let a man so account of us, as of the ministers of <span class="highlight">Christ</span>, and
+					stewards of the mysteries of God.*{ministers: servants.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.4.10/">1Cor.4.10</a></td>
+				<td>We are fools for <span class="highlight">Christ</span>’s sake, but ye are wise in
+					<span class="highlight">Christ</span>; we are weak, but ye are strong; ye are honourable, but we are
+					despised. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.4.15/">1Cor.4.15</a></td>
+				<td>For though ye have ten thousand instructors in <span class="highlight">Christ</span>, yet have ye
+					not many fathers: for in <span class="highlight">Christ</span> Jesus I have begotten you through the
+					gospel.*{instructors: guardians. have begotten you: became your father.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.4.17/">1Cor.4.17</a></td>
+				<td>For this cause have I sent unto you Timotheus, who is my beloved son, and faithful in the Lord, who
+					shall bring you into remembrance of my ways which be in <span class="highlight">Christ</span>, as I
+					teach every where in every church.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.5.4/">1Cor.5.4</a></td>
+				<td>in the name of our Lord Jesus <span class="highlight">Christ</span>, when ye are gathered together,
+					and my spirit, with the power of our Lord Jesus <span class="highlight">Christ</span>, </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.5.7/">1Cor.5.7</a></td>
+				<td>Purge out therefore the old leaven, that ye may be a new lump, as ye are unleavened. For even
+					<span class="highlight">Christ</span> our passover is sacrificed for us:*{purge: clean.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.6.15/">1Cor.6.15</a></td>
+				<td>Know ye not that your bodies are the members of <span class="highlight">Christ</span>? shall I then
+					take the members of <span class="highlight">Christ</span>, and make them the members of an harlot?
+					God forbid. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.7.22/">1Cor.7.22</a></td>
+				<td>For he that is called in the Lord, being a servant, is the Lord’s freeman: likewise also he that is
+					called, being free, is <span class="highlight">Christ</span>’s servant. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.8.6/">1Cor.8.6</a></td>
+				<td>but to us there is but one God, the Father, of whom are all things, and we in him; and one Lord
+					Jesus <span class="highlight">Christ</span>, by whom are all things, and we by him.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.8.11/">1Cor.8.11</a></td>
+				<td>and through thy knowledge shall the weak brother perish, for whom
+					<span class="highlight">Christ</span> died? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.8.12/">1Cor.8.12</a></td>
+				<td>But when ye sin so against the brethren, and wound their weak conscience, ye sin against
+					<span class="highlight">Christ</span>. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.9.1/">1Cor.9.1</a></td>
+				<td>
+					Am I not an apostle? am I not free? have I not seen Jesus <span class="highlight">Christ</span> our
+					Lord? are not ye my work in the Lord? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.9.12/">1Cor.9.12</a></td>
+				<td>If others be partakers of this power over you, are not we rather? Nevertheless we have not used this
+					power; but suffer all things, lest we should hinder the gospel of
+					<span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.9.18/">1Cor.9.18</a></td>
+				<td>What is my reward then? Verily that, when I preach the gospel, I may make the gospel of
+					<span class="highlight">Christ</span> without charge, that I abuse not my power in the
+					gospel.*{verily: just this.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.9.21/">1Cor.9.21</a></td>
+				<td>to them that are without law, as without law, (being not without law to God, but under the law to
+					<span class="highlight">Christ</span>,) that I might gain them that are without law.*{without:
+					outside the.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.10.4/">1Cor.10.4</a></td>
+				<td>and did all drink the same spiritual drink: for they drank of that spiritual Rock that followed
+					them: and that Rock was <span class="highlight">Christ</span>. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.10.9/">1Cor.10.9</a></td>
+				<td>Neither let us tempt <span class="highlight">Christ</span>, as some of them also tempted, and were
+					destroyed of serpents.*{tempt: put to the test.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.10.16/">1Cor.10.16</a></td>
+				<td>The cup of blessing which we bless, is it not the communion of the blood of
+					<span class="highlight">Christ</span>? The bread which we break, is it not the communion of the body
+					of <span class="highlight">Christ</span>? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.11.1/">1Cor.11.1</a></td>
+				<td>
+					Be ye followers of me, even as I also am of <span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.11.3/">1Cor.11.3</a></td>
+				<td>But I would have you know, that the head of every man is <span class="highlight">Christ</span>; and
+					the head of the woman is the man; and the head of <span class="highlight">Christ</span> is God.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.12.12/">1Cor.12.12</a></td>
+				<td>
+					For as the body is one, and hath many members, and all the members of that one body, being many, are
+					one body: so also is <span class="highlight">Christ</span>. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.12.27/">1Cor.12.27</a></td>
+				<td>Now ye are the body of <span class="highlight">Christ</span>, and members in particular.*{in
+					particular: individually.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.3/">1Cor.15.3</a></td>
+				<td>For I delivered unto you first of all that which I also received, how that
+					<span class="highlight">Christ</span> died for our sins according to the scriptures; </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.12/">1Cor.15.12</a></td>
+				<td>
+					Now if <span class="highlight">Christ</span> be preached that he rose from the dead, how say some
+					among you that there is no resurrection of the dead? </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.13/">1Cor.15.13</a></td>
+				<td>But if there be no resurrection of the dead, then is <span class="highlight">Christ</span> not
+					risen: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.14/">1Cor.15.14</a></td>
+				<td>and if <span class="highlight">Christ</span> be not risen, then is our preaching vain, and your
+					faith is also vain.*{vain: useless.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.15/">1Cor.15.15</a></td>
+				<td>Yea, and we are found false witnesses of God; because we have testified of God that he raised up
+					<span class="highlight">Christ</span>: whom he raised not up, if so be that the dead rise not. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.16/">1Cor.15.16</a></td>
+				<td>For if the dead rise not, then is not <span class="highlight">Christ</span> raised: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.17/">1Cor.15.17</a></td>
+				<td>and if <span class="highlight">Christ</span> be not raised, your faith is vain; ye are yet in your
+					sins.*{vain: futile.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.18/">1Cor.15.18</a></td>
+				<td>Then they also which are fallen asleep in <span class="highlight">Christ</span> are perished. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.19/">1Cor.15.19</a></td>
+				<td>If in this life only we have hope in <span class="highlight">Christ</span>, we are of all men most
+					miserable.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.20/">1Cor.15.20</a></td>
+				<td>But now is <span class="highlight">Christ</span> risen from the dead, and become the firstfruits of
+					them that slept. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.22/">1Cor.15.22</a></td>
+				<td>For as in Adam all die, even so in <span class="highlight">Christ</span> shall all be made alive.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.23/">1Cor.15.23</a></td>
+				<td>But every man in his own order: <span class="highlight">Christ</span> the firstfruits; afterward
+					they that are <span class="highlight">Christ</span>’s at his coming.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.31/">1Cor.15.31</a></td>
+				<td>I protest by your rejoicing which I have in <span class="highlight">Christ</span> Jesus our Lord, I
+					die daily. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.15.57/">1Cor.15.57</a></td>
+				<td>But thanks be to God, which giveth us the victory through our Lord Jesus
+					<span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.16.22/">1Cor.16.22</a></td>
+				<td>If any man love not the Lord Jesus <span class="highlight">Christ</span>, let him be Anathema
+					Maran-atha.*{Anathema: cursed. Maran-atha: Our Lord, come.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.16.23/">1Cor.16.23</a></td>
+				<td>The grace of our Lord Jesus <span class="highlight">Christ</span> be with you.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/1Cor.16.24/">1Cor.16.24</a></td>
+				<td>My love be with you all in <span class="highlight">Christ</span> Jesus. Amen.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.1.1/">2Cor.1.1</a></td>
+				<td>
+					Paul, an apostle of Jesus <span class="highlight">Christ</span> by the will of God, and Timothy our
+					brother, unto the church of God which is at Corinth, with all the saints which are in all Achaia:
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.1.2/">2Cor.1.2</a></td>
+				<td>grace be to you and peace from God our Father, and from the Lord Jesus
+					<span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.1.3/">2Cor.1.3</a></td>
+				<td>
+					Blessed be God, even the Father of our Lord Jesus <span class="highlight">Christ</span>, the Father
+					of mercies, and the God of all comfort;*{mercies: compassion.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.1.5/">2Cor.1.5</a></td>
+				<td>For as the sufferings of <span class="highlight">Christ</span> abound in us, so our consolation also
+					aboundeth by <span class="highlight">Christ</span>. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.1.19/">2Cor.1.19</a></td>
+				<td>For the Son of God, Jesus <span class="highlight">Christ</span>, who was preached among you by us,
+					even by me and Silvanus and Timotheus, was not yea and nay, but in him was yea.*{Timotheus:
+					Timothy.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.1.21/">2Cor.1.21</a></td>
+				<td>Now he which stablisheth us with you in <span class="highlight">Christ</span>, and hath anointed us,
+					is God;*{stablisheth: establishes.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.2.10/">2Cor.2.10</a></td>
+				<td>To whom ye forgive any thing, I forgive also: for if I forgave any thing, to whom I forgave it, for
+					your sakes forgave I it in the person of <span class="highlight">Christ</span>; </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.2.12/">2Cor.2.12</a></td>
+				<td>Furthermore, when I came to Troas to preach <span class="highlight">Christ</span>’s gospel, and a
+					door was opened unto me of the Lord, </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.2.14/">2Cor.2.14</a></td>
+				<td>
+					Now thanks be unto God, which always causeth us to triumph in <span class="highlight">Christ</span>,
+					and maketh manifest the savour of his knowledge by us in every place.*{maketh manifest: through us
+					spreads. savour: fragrance.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.2.15/">2Cor.2.15</a></td>
+				<td>For we are unto God a sweet savour of <span class="highlight">Christ</span>, in them that are saved,
+					and in them that perish: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.2.17/">2Cor.2.17</a></td>
+				<td>For we are not as many, which corrupt the word of God: but as of sincerity, but as of God, in the
+					sight of God speak we in <span class="highlight">Christ</span>.*{corrupt: peddle.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.3.3/">2Cor.3.3</a></td>
+				<td>forasmuch as ye are manifestly declared to be the epistle of <span class="highlight">Christ</span>
+					ministered by us, written not with ink, but with the Spirit of the living God; not in tables of
+					stone, but in fleshly tables of the heart.*{ye are manifestly declared to be: you show you are.
+					tables: tablets.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.3.4/">2Cor.3.4</a></td>
+				<td>And such trust have we through <span class="highlight">Christ</span> to God-ward:*{to God-ward:
+					toward God.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.3.14/">2Cor.3.14</a></td>
+				<td>but their minds were blinded: for until this day remaineth the same veil untaken away in the reading
+					of the old testament; which veil is done away in <span class="highlight">Christ</span>.*{blinded:
+					hardened.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.4.4/">2Cor.4.4</a></td>
+				<td>in whom the god of this world hath blinded the minds of them which believe not, lest the light of
+					the glorious gospel of <span class="highlight">Christ</span>, who is the image of God, should shine
+					unto them.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.4.5/">2Cor.4.5</a></td>
+				<td>For we preach not ourselves, but <span class="highlight">Christ</span> Jesus the Lord; and ourselves
+					your servants for Jesus’ sake. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.4.6/">2Cor.4.6</a></td>
+				<td>For God, who commanded the light to shine out of darkness, hath shined in our hearts, to give the
+					light of the knowledge of the glory of God in the face of Jesus
+					<span class="highlight">Christ</span>.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.5.10/">2Cor.5.10</a></td>
+				<td>For we must all appear before the judgment seat of <span class="highlight">Christ</span>; that every
+					one may receive the things done in his body, according to that he hath done, whether it be good or
+					bad.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.5.14/">2Cor.5.14</a></td>
+				<td>For the love of <span class="highlight">Christ</span> constraineth us; because we thus judge, that
+					if one died for all, then were all dead: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.5.16/">2Cor.5.16</a></td>
+				<td>Wherefore henceforth know we no man after the flesh: yea, though we have known
+					<span class="highlight">Christ</span> after the flesh, yet now henceforth know we him no more. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.5.17/">2Cor.5.17</a></td>
+				<td>Therefore if any man be in <span class="highlight">Christ</span>, he is a new creature: old things
+					are passed away; behold, all things are become new.*{creature: creation.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.5.18/">2Cor.5.18</a></td>
+				<td>And all things are of God, who hath reconciled us to himself by Jesus
+					<span class="highlight">Christ</span>, and hath given to us the ministry of reconciliation; </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.5.19/">2Cor.5.19</a></td>
+				<td>to wit, that God was in <span class="highlight">Christ</span>, reconciling the world unto himself,
+					not imputing their trespasses unto them; and hath committed unto us the word of reconciliation.*{to
+					wit: that is. imputing: counting.}</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.5.20/">2Cor.5.20</a></td>
+				<td>Now then we are ambassadors for <span class="highlight">Christ</span>, as though God did beseech you
+					by us: we pray you in <span class="highlight">Christ</span>’s stead, be ye reconciled to
+					God.*{beseech: beg. in <span class="highlight">Christ</span>’s stead: on behalf of
+					<span class="highlight">Christ</span>.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.6.15/">2Cor.6.15</a></td>
+				<td>And what concord hath <span class="highlight">Christ</span> with Belial? or what part hath he that
+					believeth with an infidel?*{concord: harmony. infidel: unbeliever.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.8.9/">2Cor.8.9</a></td>
+				<td>For ye know the grace of our Lord Jesus <span class="highlight">Christ</span>, that, though he was
+					rich, yet for your sakes he became poor, that ye through his poverty might be rich.</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.8.23/">2Cor.8.23</a></td>
+				<td>Whether any do inquire of Titus, he is my partner and fellowhelper concerning you: or our brethren
+					be inquired of, they are the messengers of the churches, and the glory of
+					<span class="highlight">Christ</span>. </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.9.13/">2Cor.9.13</a></td>
+				<td>while by the experiment of this ministration they glorify God for your professed subjection unto the
+					gospel of <span class="highlight">Christ</span>, and for your liberal distribution unto them, and
+					unto all men;*{experiment: proof. ministration: ministry. your professed subjection: the obedience
+					of your confession. liberal distribution unto: generosity in sharing with.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.10.1/">2Cor.10.1</a></td>
+				<td>
+					Now I Paul myself beseech you by the meekness and gentleness of
+					<span class="highlight">Christ</span>, who in presence am base among you, but being absent am bold
+					toward you:*{beseech: plead with. base: timid.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.10.5/">2Cor.10.5</a></td>
+				<td>casting down imaginations, and every high thing that exalteth itself against the knowledge of God,
+					and bringing into captivity every thought to the obedience of
+					<span class="highlight">Christ</span>;*{imaginations: arguments.} </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.10.7/">2Cor.10.7</a></td>
+				<td>Do ye look on things after the outward appearance? If any man trust to himself that he is
+					<span class="highlight">Christ</span>’s, let him of himself think this again, that, as he is
+					<span class="highlight">Christ</span>’s, even so are we <span class="highlight">Christ</span>’s.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.10.14/">2Cor.10.14</a></td>
+				<td>For we stretch not ourselves beyond our measure, as though we reached not unto you: for we are come
+					as far as to you also in preaching the gospel of <span class="highlight">Christ</span>: </td>
+			</tr>
+			<tr>
+				<td><a href="https://nlt.to/2Cor.11.2/">2Cor.11.2</a></td>
+				<td>For I am jealous over you with godly jealousy: for I have espoused you to one husband, that I may
+					present you as a chaste virgin to <span class="highlight">Christ</span>.*{espoused: promised.
+					chaste: pure.} </td>
 			</tr>
 	</div>
 	</table>
