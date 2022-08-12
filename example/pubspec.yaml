@@ -1,9 +1,11 @@
 name: example
-description: Just an example project.
-version: 1.0.0
 
 environment:
   sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  nlt_bible:
+    path: ../
 
 dev_dependencies:
   lint: ^1.10.0
