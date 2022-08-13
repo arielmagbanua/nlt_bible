@@ -12,7 +12,7 @@ abstract class NltRemoteDataSource extends RestfulDataSource {
 
   /// Default constructor
   ///
-  /// The [httpClient] is the http client instance
+  /// The [httpClient] is the http client instance.
   NltRemoteDataSource({
     required super.httpClient,
     required this.apiKey,

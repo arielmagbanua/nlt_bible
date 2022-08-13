@@ -6,6 +6,10 @@ import 'nlt_remote_data_source.dart';
 ///
 /// The base Remote API Data Source implementation class.
 class NltRemoteDataSourceImplementation extends NltRemoteDataSource {
+  /// Constructor
+  ///
+  /// The [httpClient] is the http client instance.
+  /// The [apiKey] is the API key NLT API.
   NltRemoteDataSourceImplementation({
     required super.httpClient,
     required super.apiKey,

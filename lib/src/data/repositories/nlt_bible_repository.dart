@@ -3,9 +3,17 @@ import '../../domain/entities/search.dart';
 import '../../domain/repositories/nlt_bible_repository.dart' as contracts;
 import '../data_sources/nlt_remote_data_source.dart';
 
+/// NltBibleRepository
+///
+/// It is responsible for abstracting the underlying implementation
+/// of getting bible passages from NLT API.
 class NltBibleRepository implements contracts.NltBibleRepository {
+  /// The NLT remote data source instance.
   final NltRemoteDataSource nltRemoteDataSource;
 
+  /// Constructor
+  ///
+  /// The [nltRemoteDataSource] is the NLT remote data source instance.
   NltBibleRepository(this.nltRemoteDataSource);
 
   /// Get passages

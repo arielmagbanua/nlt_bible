@@ -7,6 +7,9 @@ abstract class RestfulDataSource {
   /// The http client
   final http.Client httpClient;
 
+  /// Constructor
+  ///
+  /// The [httpClient] is the http client instance.
   const RestfulDataSource({
     required this.httpClient,
   });
