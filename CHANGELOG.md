@@ -1,3 +1,3 @@
-## 1.0.0
+## 0.0.1
 
-- Initial version.
+- Initial release which contain client library that enables retrieval of passages and perform search queries.
