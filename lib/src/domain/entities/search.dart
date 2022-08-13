@@ -16,8 +16,8 @@ class Search extends Equatable {
 
   @override
   List<Object?> get props => [
-    data,
-    text,
-    version,
-  ];
+        data,
+        text,
+        version,
+      ];
 }

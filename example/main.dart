@@ -1,6 +1,6 @@
 import 'package:nlt_bible/nlt_bible.dart';
 
-void main () async {
+void main() async {
   final apiKey = 'your-api-key';
 
   final api = Api(apiKey);

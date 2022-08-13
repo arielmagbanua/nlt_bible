@@ -72,7 +72,7 @@ void main() {
     when(() => mockResponse.statusCode).thenReturn(200);
     when(() => mockResponse.body).thenReturn(sampleSearchResult);
     when(() => mockedHttpClient.get(correctUri, headers: {})).thenAnswer(
-          (_) => Future<http.Response>.value(mockResponse),
+      (_) => Future<http.Response>.value(mockResponse),
     );
 
     final remoteDataSource = NltRemoteDataSourceImplementation(
