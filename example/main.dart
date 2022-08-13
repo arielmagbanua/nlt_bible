@@ -6,5 +6,6 @@ void main () async {
   final api = Api(apiKey);
   final passages = await api.passages('John 3:16');
 
+  // print the data
   print(passages.data);
 }
