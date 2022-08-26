@@ -30,4 +30,10 @@ abstract class NltRemoteDataSource extends RestfulDataSource {
   /// The [text] is the text to search for.
   /// The [version] is the bible version of the passage that it will retrieve.
   Future<String?> search(String text, {String version = 'NLT'});
+
+  /// Executes parsing of the given reference.
+  ///
+  /// The [ref] is the reference string to parse.
+  /// The [language] is the language of the result and defaults to english (en).
+  Future<List<dynamic>> parse(String ref, {String language = 'en'});
 }

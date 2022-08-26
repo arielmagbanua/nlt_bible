@@ -1,6 +1,7 @@
 import 'package:http/http.dart' as http;
 
 import 'data/data_sources/nlt_remote_data_source_implementation.dart';
+import 'domain/entities/parsed_passage_segment.dart';
 import 'domain/entities/passages.dart';
 import 'domain/entities/search.dart';
 import 'domain/repositories/nlt_bible_repository.dart' as contracts;
@@ -54,5 +55,13 @@ class Api {
   /// The [version] is the Bible version to show. (Default version=NLT.)
   Future<Search> search(String text, {String version = 'NLT'}) {
     return nltBibleRepository.search(text, version: version);
+  }
+
+  /// Executes parsing of the given reference.
+  ///
+  /// The [ref] is the reference string to parse.
+  /// The [language] is the language of the result and defaults to english (en).
+  Future<List<List<ParsedPassageSegment?>>> parse(String ref, {String language = 'en'}) {
+    return nltBibleRepository.parse(ref, language: language);
   }
 }

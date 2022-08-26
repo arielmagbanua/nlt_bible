@@ -2926,3 +2926,165 @@ const sampleSearchResultKJV = r'''
 
 </html>
 ''';
+
+// John.1
+const parsedChapterDotNotationResponse = r'''
+[
+    [
+        {
+            "id": 43,
+            "title": "John",
+            "title_es": "Juan",
+            "name_es": "Jn",
+            "bk": "John",
+            "ch": 1,
+            "vs": 1,
+            "type_desc": "START"
+        },
+        {
+            "id": 43,
+            "title": "John",
+            "title_es": "Juan",
+            "name_es": "Jn",
+            "bk": "John",
+            "ch": 1,
+            "vs": 51,
+            "type_desc": "END"
+        }
+    ]
+]
+''';
+
+// John.1-2
+const parsedRangeChapterDotNotationResponse = r'''
+[
+    [
+        {
+            "id": 43,
+            "title": "John",
+            "title_es": "Juan",
+            "name_es": "Jn",
+            "bk": "John",
+            "ch": 1,
+            "vs": 1,
+            "type_desc": "START"
+        },
+        {
+            "id": 43,
+            "title": "John",
+            "title_es": "Juan",
+            "name_es": "Jn",
+            "bk": "John",
+            "ch": 2,
+            "vs": 28,
+            "type_desc": "END"
+        }
+    ]
+]
+''';
+
+// John 3:16
+const parsedRegularNotationResponse = r'''
+[
+    [
+        {
+            "id": 43,
+            "title": "John",
+            "title_es": "Juan",
+            "name_es": "Jn",
+            "bk": "John",
+            "ch": 3,
+            "vs": 16,
+            "type_desc": "START"
+        },
+        {
+            "id": 43,
+            "title": "John",
+            "title_es": "Juan",
+            "name_es": "Jn",
+            "bk": "John",
+            "ch": 3,
+            "vs": 16,
+            "type_desc": "END"
+        }
+    ]
+]
+''';
+
+// John 3:16-18
+const parsedRegularNotationRangeResponse = r'''
+[
+    [
+        {
+            "id": 43,
+            "title": "John",
+            "title_es": "Juan",
+            "name_es": "Jn",
+            "bk": "John",
+            "ch": 3,
+            "vs": 16,
+            "type_desc": "START"
+        },
+        {
+            "id": 43,
+            "title": "John",
+            "title_es": "Juan",
+            "name_es": "Jn",
+            "bk": "John",
+            "ch": 3,
+            "vs": 18,
+            "type_desc": "END"
+        }
+    ]
+]
+''';
+
+// John 3:16-18, 20-21
+const parsedMultiRegularNotationRangeResponse = r'''
+[
+    [
+        {
+            "id": 43,
+            "title": "John",
+            "title_es": "Juan",
+            "name_es": "Jn",
+            "bk": "John",
+            "ch": 3,
+            "vs": 16,
+            "type_desc": "START"
+        },
+        {
+            "id": 43,
+            "title": "John",
+            "title_es": "Juan",
+            "name_es": "Jn",
+            "bk": "John",
+            "ch": 3,
+            "vs": 18,
+            "type_desc": "END"
+        }
+    ],
+    [
+        {
+            "id": 43,
+            "title": "John",
+            "title_es": "Juan",
+            "name_es": "Jn",
+            "bk": "John",
+            "ch": 3,
+            "vs": 20,
+            "type_desc": "START"
+        },
+        {
+            "id": 43,
+            "title": "John",
+            "title_es": "Juan",
+            "name_es": "Jn",
+            "bk": "John",
+            "ch": 3,
+            "vs": 21,
+            "type_desc": "END"
+        }
+    ]
+]
+''';

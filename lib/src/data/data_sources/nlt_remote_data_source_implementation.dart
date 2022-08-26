@@ -1,4 +1,5 @@
 import 'package:http/http.dart' as http;
+import 'dart:convert';
 
 import 'nlt_remote_data_source.dart';
 
@@ -70,5 +71,24 @@ class NltRemoteDataSourceImplementation extends NltRemoteDataSource {
     );
 
     return response.statusCode == 200 ? response.body : null;
+  }
+
+  /// Executes parsing of the given reference.
+  ///
+  /// The [ref] is the reference string to parse.
+  /// The [language] is the language of the result and defaults to english (en).
+  @override
+  Future<List<dynamic>> parse(String ref, {String language = 'en'}) async {
+    final response = await _response(
+      endpoint: 'parse',
+      method: 'GET',
+      params: {'key': apiKey, 'ref': ref, 'language': language},
+    );
+
+    if (response.statusCode == 200) {
+      return List<dynamic>.from(json.decode(response.body) as List);
+    }
+
+    return [];
   }
 }
