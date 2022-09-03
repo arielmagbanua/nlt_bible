@@ -101,7 +101,7 @@ void main() {
 
     when(() => mockNltRemoteDataSource.parse(ref, language: language))
         .thenAnswer(
-          (_) => Future.value(parsedSource),
+      (_) => Future.value(parsedSource),
     );
 
     final repository = NltBibleRepository(mockNltRemoteDataSource);
@@ -138,7 +138,7 @@ void main() {
 
     when(() => mockNltRemoteDataSource.parse(ref, language: language))
         .thenAnswer(
-          (_) => Future.value(parsedSource),
+      (_) => Future.value(parsedSource),
     );
 
     final repository = NltBibleRepository(mockNltRemoteDataSource);
@@ -175,7 +175,7 @@ void main() {
 
     when(() => mockNltRemoteDataSource.parse(ref, language: language))
         .thenAnswer(
-          (_) => Future.value(parsedSource),
+      (_) => Future.value(parsedSource),
     );
 
     final repository = NltBibleRepository(mockNltRemoteDataSource);
@@ -212,7 +212,7 @@ void main() {
 
     when(() => mockNltRemoteDataSource.parse(ref, language: language))
         .thenAnswer(
-          (_) => Future.value(parsedSource),
+      (_) => Future.value(parsedSource),
     );
 
     final repository = NltBibleRepository(mockNltRemoteDataSource);
@@ -249,7 +249,7 @@ void main() {
 
     when(() => mockNltRemoteDataSource.parse(ref, language: language))
         .thenAnswer(
-          (_) => Future.value(parsedSource),
+      (_) => Future.value(parsedSource),
     );
 
     final repository = NltBibleRepository(mockNltRemoteDataSource);
@@ -294,5 +294,22 @@ void main() {
     expect(second2.ch, 3);
     expect(second2.vs, 21);
     expect(second2.typeDesc, 'END');
+  });
+
+  test('Test getting of plans', () async {
+    final plansSource = List<Map<String, dynamic>>.from(
+      json.decode(plansSampleResponse) as List,
+    );
+
+    when(() => mockNltRemoteDataSource.plans())
+        .thenAnswer((_) => Future.value(plansSource));
+
+    final repository = NltBibleRepository(mockNltRemoteDataSource);
+    final plans = await repository.plans();
+    final plan = plans[0]!;
+
+    expect(plans.length, 1);
+    expect(plan.id, 'OYCB');
+    expect(plan.title, 'One Year® Chronological Bible');
   });
 }
