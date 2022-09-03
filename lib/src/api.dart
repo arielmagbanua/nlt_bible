@@ -1,4 +1,5 @@
 import 'package:http/http.dart' as http;
+import 'package:nlt_bible/src/domain/entities/reading_plan.dart';
 
 import 'data/data_sources/nlt_remote_data_source_implementation.dart';
 import 'domain/entities/parsed_passage_segment.dart';
@@ -61,7 +62,13 @@ class Api {
   ///
   /// The [ref] is the reference string to parse.
   /// The [language] is the language of the result and defaults to english (en).
-  Future<List<List<ParsedPassageSegment?>>> parse(String ref, {String language = 'en'}) {
+  Future<List<List<ParsedPassageSegment?>>> parse(String ref,
+      {String language = 'en'}) {
     return nltBibleRepository.parse(ref, language: language);
+  }
+
+  /// Retrieve all available reading plans.
+  Future<List<ReadingPlan?>> plans() {
+    return nltBibleRepository.plans();
   }
 }
