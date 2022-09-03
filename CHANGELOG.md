@@ -6,3 +6,8 @@
 ## 0.1.0
 
 - Added parsing of book chapters and verses.
+
+
+## 0.2.0
+
+- Added retrieving of reading plans.

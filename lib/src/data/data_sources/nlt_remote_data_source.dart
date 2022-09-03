@@ -36,4 +36,7 @@ abstract class NltRemoteDataSource extends RestfulDataSource {
   /// The [ref] is the reference string to parse.
   /// The [language] is the language of the result and defaults to english (en).
   Future<List<dynamic>> parse(String ref, {String language = 'en'});
+
+  /// Retrieves the list of reading plans supported by the API.
+  Future<List<Map<String, dynamic>>> plans();
 }

@@ -314,4 +314,31 @@ void main() {
     expect(second2['vs'], 21);
     expect(second2['type_desc'], 'END');
   });
+
+  test('Test retrieval of plans', () async {
+    final correctUri = Uri.parse(
+      'https://api.nlt.to/api/plans',
+    );
+
+    when(() => mockResponse.statusCode).thenReturn(200);
+    when(() => mockResponse.body).thenReturn(
+      plansSampleResponse,
+    );
+    when(() => mockedHttpClient.get(correctUri, headers: {})).thenAnswer(
+      (_) => Future<http.Response>.value(mockResponse),
+    );
+
+    final remoteDataSource = NltRemoteDataSourceImplementation(
+      httpClient: mockedHttpClient,
+      apiKey: apiKey,
+    );
+
+    final result = await remoteDataSource.plans();
+
+    final plan = result[0];
+
+    expect(plan['id'], 'OYCB');
+    expect(plan['title'], 'One Year® Chronological Bible');
+    expect(result.length, 2);
+  });
 }

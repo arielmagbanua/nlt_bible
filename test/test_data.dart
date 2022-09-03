@@ -3088,3 +3088,16 @@ const parsedMultiRegularNotationRangeResponse = r'''
     ]
 ]
 ''';
+
+const plansSampleResponse = r'''
+[
+    {
+        "id": "OYCB",
+        "title": "One Year® Chronological Bible"
+    },
+    {
+        "id": "OYCB",
+        "title": "One Year® Chronological Bible"
+    }
+]
+''';

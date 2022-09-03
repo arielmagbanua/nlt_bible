@@ -1,3 +1,5 @@
+import 'package:nlt_bible/src/domain/entities/reading_plan.dart';
+
 import '../entities/parsed_passage_segment.dart';
 import '../entities/passages.dart';
 import '../entities/search.dart';
@@ -32,5 +34,9 @@ abstract class NltBibleRepository {
   ///
   /// The [ref] is the reference string to parse.
   /// The [language] is the language of the result and defaults to english (en).
-  Future<List<List<ParsedPassageSegment?>>> parse(String ref, {String language = 'en'});
+  Future<List<List<ParsedPassageSegment?>>> parse(String ref,
+      {String language = 'en'});
+
+  /// Retrieve all available reading plans.
+  Future<List<ReadingPlan?>> plans();
 }

@@ -38,7 +38,7 @@ class NltRemoteDataSourceImplementation extends NltRemoteDataSource {
 
     return sendRequest(
       method: method,
-      url: '$url?$queryString',
+      url: queryString.isNotEmpty ? '$url?$queryString' : url,
     );
   }
 
@@ -87,6 +87,22 @@ class NltRemoteDataSourceImplementation extends NltRemoteDataSource {
 
     if (response.statusCode == 200) {
       return List<dynamic>.from(json.decode(response.body) as List);
+    }
+
+    return [];
+  }
+
+  /// Retrieves the list of reading plans supported by the API.
+  @override
+  Future<List<Map<String, dynamic>>> plans() async {
+    final response = await _response(
+      endpoint: 'plans',
+      method: 'GET',
+    );
+
+    if (response.statusCode == 200) {
+      return List<Map<String, dynamic>>.from(
+          json.decode(response.body) as List);
     }
 
     return [];
