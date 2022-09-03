@@ -12,7 +12,7 @@ You can secure an API key by creating a new application on the [NLT API website]
 * Get passages from NLT Bible API.
 * Perform search with passages and short context paragraphs for a given search query terms.
 * Retrieve a parsed list of references for the given reference string.
-* Retrieve a list of reading plans supported by the API. (still in development)
+* Retrieve a list of reading plans supported by the API.
 * Retrieve the text for a given date in the given reading plan. (still in development)
 
 ## Getting started
