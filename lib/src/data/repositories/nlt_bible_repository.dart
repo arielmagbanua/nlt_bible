@@ -1,3 +1,5 @@
+import 'package:nlt_bible/src/domain/entities/reading_plan.dart';
+
 import '../../domain/entities/parsed_passage_segment.dart';
 import '../../domain/entities/passages.dart';
 import '../../domain/entities/search.dart';
@@ -53,8 +55,10 @@ class NltBibleRepository implements contracts.NltBibleRepository {
   /// The [ref] is the reference string to parse.
   /// The [language] is the language of the result and defaults to english (en).
   @override
-  Future<List<List<ParsedPassageSegment?>>> parse(String ref, {String language = 'en'}) async {
-    final parsedSource = await nltRemoteDataSource.parse(ref, language: language);
+  Future<List<List<ParsedPassageSegment?>>> parse(String ref,
+      {String language = 'en'}) async {
+    final parsedSource =
+        await nltRemoteDataSource.parse(ref, language: language);
 
     List<List<dynamic>> parsedList = List<List<dynamic>>.from(parsedSource);
 
@@ -64,5 +68,16 @@ class NltBibleRepository implements contracts.NltBibleRepository {
         // return parsed as Map<String, dynamic>;
       }).toList();
     }).toList();
+  }
+
+  /// Retrieve all available reading plans.
+  @override
+  Future<List<ReadingPlan?>> plans() async {
+    final plansData = await nltRemoteDataSource.plans();
+
+    final plans = plansData.map((plan) => ReadingPlan.fromJson(plan)).toList();
+
+    // remove duplicates and return the plans
+    return plans.toSet().toList();
   }
 }
