@@ -48,11 +48,18 @@ class NltRemoteDataSourceImplementation extends NltRemoteDataSource {
   /// More than one reference can be given, separated by semi-colons or commas.
   /// The [version] is the bible version of the passage that it will retrieve.
   @override
-  Future<String?> getPassages(String ref, {String version = 'NLT'}) async {
+  Future<String?> getPassages(
+    String ref, {
+    String version = 'NLT',
+  }) async {
     final response = await _response(
       endpoint: 'passages',
       method: 'GET',
-      params: {'key': apiKey, 'ref': ref, 'version': version},
+      params: {
+        'key': apiKey,
+        'ref': ref,
+        'version': version,
+      },
     );
 
     return response.statusCode == 200 ? response.body : null;
@@ -63,11 +70,18 @@ class NltRemoteDataSourceImplementation extends NltRemoteDataSource {
   /// The [text] is the text to search for.
   /// The [version] is the bible version of the passage that it will retrieve.
   @override
-  Future<String?> search(String text, {String version = 'NLT'}) async {
+  Future<String?> search(
+    String text, {
+    String version = 'NLT',
+  }) async {
     final response = await _response(
       endpoint: 'search',
       method: 'GET',
-      params: {'key': apiKey, 'text': text, 'version': version},
+      params: {
+        'key': apiKey,
+        'text': text,
+        'version': version,
+      },
     );
 
     return response.statusCode == 200 ? response.body : null;
@@ -78,11 +92,18 @@ class NltRemoteDataSourceImplementation extends NltRemoteDataSource {
   /// The [ref] is the reference string to parse.
   /// The [language] is the language of the result and defaults to english (en).
   @override
-  Future<List<dynamic>> parse(String ref, {String language = 'en'}) async {
+  Future<List<dynamic>> parse(
+    String ref, {
+    String language = 'en',
+  }) async {
     final response = await _response(
       endpoint: 'parse',
       method: 'GET',
-      params: {'key': apiKey, 'ref': ref, 'language': language},
+      params: {
+        'key': apiKey,
+        'ref': ref,
+        'language': language,
+      },
     );
 
     if (response.statusCode == 200) {
