@@ -98,6 +98,9 @@ class NltRemoteDataSourceImplementation extends NltRemoteDataSource {
     final response = await _response(
       endpoint: 'plans',
       method: 'GET',
+      params: {
+        'key': apiKey,
+      },
     );
 
     if (response.statusCode == 200) {

@@ -317,7 +317,7 @@ void main() {
 
   test('Test retrieval of plans', () async {
     final correctUri = Uri.parse(
-      'https://api.nlt.to/api/plans',
+      'https://api.nlt.to/api/plans?key=$apiKey',
     );
 
     when(() => mockResponse.statusCode).thenReturn(200);
