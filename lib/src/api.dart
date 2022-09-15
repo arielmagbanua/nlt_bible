@@ -46,25 +46,42 @@ class Api {
   /// | NTV   | Nueva Traducción Viviente |   |   |   |
   /// | KJV   | King James Version        |   |   |   |
   /// ```
-  Future<Passages> passages(String ref, {String version = 'NLT'}) {
-    return nltBibleRepository.getPassages(ref, version: version);
+  Future<Passages> passages(
+    String ref, {
+    String version = 'NLT',
+  }) {
+    return nltBibleRepository.getPassages(
+      ref,
+      version: version,
+    );
   }
 
   /// Executes a search for the given query term.
   ///
   /// The [text] is the text or term to search for.
   /// The [version] is the Bible version to show. (Default version=NLT.)
-  Future<Search> search(String text, {String version = 'NLT'}) {
-    return nltBibleRepository.search(text, version: version);
+  Future<Search> search(
+    String text, {
+    String version = 'NLT',
+  }) {
+    return nltBibleRepository.search(
+      text,
+      version: version,
+    );
   }
 
   /// Executes parsing of the given reference.
   ///
   /// The [ref] is the reference string to parse.
   /// The [language] is the language of the result and defaults to english (en).
-  Future<List<List<ParsedPassageSegment?>>> parse(String ref,
-      {String language = 'en'}) {
-    return nltBibleRepository.parse(ref, language: language);
+  Future<List<List<ParsedPassageSegment?>>> parse(
+    String ref, {
+    String language = 'en',
+  }) {
+    return nltBibleRepository.parse(
+      ref,
+      language: language,
+    );
   }
 
   /// Retrieve all available reading plans.
