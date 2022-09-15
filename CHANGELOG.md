@@ -17,3 +17,8 @@
 
 - Fixed the missing API Key when retrieving reading plans.
 - Improved the source code formatting.
+
+
+## 0.4.0
+
+- Implemented the reading interface.
