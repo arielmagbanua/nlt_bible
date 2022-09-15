@@ -88,4 +88,22 @@ class NltBibleRepository implements contracts.NltBibleRepository {
     // remove duplicates and return the plans
     return plans.toSet().toList();
   }
+
+  /// Retrieves the text content for a given date in the given reading plan.
+  ///
+  /// The [plan] is the name of the reading plan from which to retrieve the reading.
+  /// The [date] is the date of the reading.
+  /// The [version] is the bible version in which to provide the reading.
+  @override
+  Future<String?> reading(
+    String plan, {
+    String date = 'today',
+    String version = 'NLT',
+  }) {
+    return nltRemoteDataSource.reading(
+      plan,
+      date: date,
+      version: version,
+    );
+  }
 }
