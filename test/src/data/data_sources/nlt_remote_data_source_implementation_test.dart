@@ -2,7 +2,6 @@ import 'package:test/test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:http/http.dart' as http;
 import 'package:nlt_bible/src/data/data_sources/nlt_remote_data_source_implementation.dart';
-import 'package:nlt_bible/src/domain/entities/parsed_passage_segment.dart';
 
 import '../../../test_data.dart';
 
@@ -340,5 +339,49 @@ void main() {
     expect(plan['id'], 'OYCB');
     expect(plan['title'], 'One Year® Chronological Bible');
     expect(result.length, 2);
+  });
+
+  test('Test retrieval of reading text of plans', () async {
+    final correctUri = Uri.parse(
+      'https://api.nlt.to/api/reading?key=$apiKey&date=today&version=NLT&plan=OYCB',
+    );
+
+    when(() => mockResponse.statusCode).thenReturn(200);
+    when(() => mockResponse.body).thenReturn(
+      readingPlansSampleResponse,
+    );
+    when(() => mockedHttpClient.get(correctUri, headers: {})).thenAnswer(
+      (_) => Future<http.Response>.value(mockResponse),
+    );
+
+    final remoteDataSource = NltRemoteDataSourceImplementation(
+      httpClient: mockedHttpClient,
+      apiKey: apiKey,
+    );
+
+    final result = await remoteDataSource.reading('OYCB');
+
+    expect(result, readingPlansSampleResponse);
+  });
+
+  test('Test retrieval of reading text of plans with wrong plan', () async {
+    final correctUri = Uri.parse(
+      'https://api.nlt.to/api/reading?key=$apiKey&date=today&version=NLT&plan=AAA',
+    );
+
+    when(() => mockResponse.statusCode).thenReturn(200);
+    when(() => mockResponse.body).thenReturn('');
+    when(() => mockedHttpClient.get(correctUri, headers: {})).thenAnswer(
+      (_) => Future<http.Response>.value(mockResponse),
+    );
+
+    final remoteDataSource = NltRemoteDataSourceImplementation(
+      httpClient: mockedHttpClient,
+      apiKey: apiKey,
+    );
+
+    final result = await remoteDataSource.reading('AAA');
+
+    expect(result, '');
   });
 }
