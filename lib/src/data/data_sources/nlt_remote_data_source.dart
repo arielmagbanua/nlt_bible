@@ -48,4 +48,15 @@ abstract class NltRemoteDataSource extends RestfulDataSource {
 
   /// Retrieves the list of reading plans supported by the API.
   Future<List<Map<String, dynamic>>> plans();
+
+  /// Retrieves the text content for a given date in the given reading plan.
+  ///
+  /// The [plan] is the name of the reading plan from which to retrieve the reading.
+  /// The [date] is the date of the reading.
+  /// The [version] is the bible version in which to provide the reading.
+  Future<String?> reading(
+    String plan, {
+    String date = 'today',
+    String version = 'NLT',
+  });
 }
