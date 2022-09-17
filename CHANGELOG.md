@@ -22,3 +22,5 @@
 ## 0.4.0
 
 - Implemented the reading interface.
+- Improved code formatting.
+
