@@ -301,8 +301,9 @@ void main() {
       json.decode(plansSampleResponse) as List,
     );
 
-    when(() => mockNltRemoteDataSource.plans())
-        .thenAnswer((_) => Future.value(plansSource));
+    when(() => mockNltRemoteDataSource.plans()).thenAnswer(
+      (_) => Future.value(plansSource),
+    );
 
     final repository = NltBibleRepository(mockNltRemoteDataSource);
     final plans = await repository.plans();
@@ -311,5 +312,16 @@ void main() {
     expect(plans.length, 1);
     expect(plan.id, 'OYCB');
     expect(plan.title, 'One Year® Chronological Bible');
+  });
+
+  test('Test getting of reading text of plans', () async {
+    when(() => mockNltRemoteDataSource.reading('OYCB')).thenAnswer(
+      (_) => Future.value(readingPlansSampleResponse),
+    );
+
+    final repository = NltBibleRepository(mockNltRemoteDataSource);
+    final readingContent = await repository.reading('OYCB');
+
+    expect(readingContent, readingPlansSampleResponse);
   });
 }
