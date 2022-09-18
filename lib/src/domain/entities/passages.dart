@@ -26,5 +26,9 @@ class Passages extends Equatable {
 
   /// Retrieves all properties of this class.
   @override
-  List<Object?> get props => [data, ref, version];
+  List<Object?> get props => [
+        data,
+        ref,
+        version,
+      ];
 }

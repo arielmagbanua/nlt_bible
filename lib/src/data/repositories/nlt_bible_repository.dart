@@ -33,7 +33,10 @@ class NltBibleRepository implements contracts.NltBibleRepository {
   /// | KJV   | King James Version        |   |   |   |
   /// ```
   @override
-  Future<Passages> getPassages(String ref, {String version = 'NLT'}) async {
+  Future<Passages> getPassages(
+    String ref, {
+    String version = 'NLT',
+  }) async {
     final data = await nltRemoteDataSource.getPassages(
       ref,
       version: version,
@@ -47,7 +50,10 @@ class NltBibleRepository implements contracts.NltBibleRepository {
   /// The [text] is the text or term to search for.
   /// The [version] is the Bible version to show. (Default version=NLT.)
   @override
-  Future<Search> search(String text, {String version = 'NLT'}) async {
+  Future<Search> search(
+    String text, {
+    String version = 'NLT',
+  }) async {
     final data = await nltRemoteDataSource.search(
       text,
       version: version,
@@ -61,8 +67,10 @@ class NltBibleRepository implements contracts.NltBibleRepository {
   /// The [ref] is the reference string to parse.
   /// The [language] is the language of the result and defaults to english (en).
   @override
-  Future<List<List<ParsedPassageSegment?>>> parse(String ref,
-      {String language = 'en'}) async {
+  Future<List<List<ParsedPassageSegment?>>> parse(
+    String ref, {
+    String language = 'en',
+  }) async {
     final parsedSource = await nltRemoteDataSource.parse(
       ref,
       language: language,

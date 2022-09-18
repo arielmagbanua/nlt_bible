@@ -107,7 +107,9 @@ class NltRemoteDataSourceImplementation extends NltRemoteDataSource {
     );
 
     if (response.statusCode == 200) {
-      return List<dynamic>.from(json.decode(response.body) as List);
+      return List<dynamic>.from(
+        json.decode(response.body) as List,
+      );
     }
 
     return [];
@@ -126,7 +128,8 @@ class NltRemoteDataSourceImplementation extends NltRemoteDataSource {
 
     if (response.statusCode == 200) {
       return List<Map<String, dynamic>>.from(
-          json.decode(response.body) as List);
+        json.decode(response.body) as List,
+      );
     }
 
     return [];
@@ -154,8 +157,6 @@ class NltRemoteDataSourceImplementation extends NltRemoteDataSource {
       },
     );
 
-    if (response.statusCode == 200) return response.body;
-
-    return null;
+    return response.statusCode == 200 ? response.body : null;
   }
 }
