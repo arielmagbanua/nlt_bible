@@ -1,6 +1,6 @@
 name: nlt_bible
 description: A future-based dart package for the NLT API from Tyndale House Publishers which can be used to fetch NLT bible passages.
-version: 0.4.0
+version: 0.4.1
 homepage: https://github.com/arielmagbanua/nlt_bible
 
 environment:
