@@ -23,3 +23,9 @@
 
 - Implemented the reading interface.
 - Improved code formatting.
+
+
+## 0.4.1
+
+- Updated README.
+- Improved code formatting.
