@@ -29,3 +29,10 @@
 
 - Updated README.
 - Improved code formatting.
+
+
+## 0.4.2
+
+- Replaced deprecated codes.
+- Updated the SDK and package versions.
+
