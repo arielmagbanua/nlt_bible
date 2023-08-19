@@ -15,7 +15,7 @@ class ReadingPlan extends Equatable {
   final String? title;
 
   /// The text content of the reading plan.
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   final String? text;
 
   /// Constructor
